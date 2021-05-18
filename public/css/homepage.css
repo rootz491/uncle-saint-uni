@@ -1,0 +1,247 @@
+/* section 1 */
+span {
+    padding: 2px 4px;
+    background: lightgrey;
+    color: #1E56AC;
+    border-radius: 5px;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+}
+
+.desc {
+    display: grid;
+    gap: 15px;
+    padding: 2em 4em;
+    font-size: 2em;
+}
+
+
+.quote {
+    padding: 4em;
+    display: grid;
+    gap: 2em;
+    flex: 1;
+}
+
+.quote > h1 {
+    font-size: 2.4em;
+}
+
+.quote > p {
+    text-align: justify;
+    line-height: 1.4em;
+}
+
+#illus1 {
+    flex: 1;
+}
+
+#illus1 > img {
+    width: 100%;
+
+}
+
+
+.btns {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em 0;
+}
+
+
+.btns a {
+    padding: 6px 12px;
+    background: rgb(221, 89, 89);
+    color: white;
+    border: 1px solid red;
+    border-radius: 4px;
+}
+
+.btns a:hover {
+    background: none;
+    color: rgb(221, 89, 89);
+    border: 1px solid red;
+}
+
+#blockCover {
+    position: relative;
+    margin: 2em 8em;
+}
+
+blockquote {
+    padding: 1em 2em;
+}
+
+blockquote::after {
+    content: '';
+    position: absolute;
+    background: #000;
+    width: 5px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+@media screen and (max-width: 675px) {
+    .intro {
+        display: grid;
+        place-content: center;
+        gap: 2em;
+        padding: 1em 0;
+        text-align: justify;
+    }
+    .desc {
+        font-size: 1.4em;
+        text-align: center;
+        padding: .5em;
+        margin: 1em 0;
+    }
+    .quote {
+        padding: 2em;
+    }
+    .quote > h1 {
+        text-align: center;
+    }
+    .btns {
+        justify-content: space-between;
+    }
+    #blockCover {
+        position: relative;
+        margin: 2em 1em;
+    }
+    blockquote {
+        padding: .2em 1em;
+    }
+}
+
+
+
+
+
+/* section 2 */
+
+
+#two {
+    padding: 2em;
+}
+
+
+.feature {
+    margin: 1em 0;
+}
+
+.feature h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.feature p {
+    line-height: 1.5em;
+    margin: 0 6em;
+}
+
+
+.showcase {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3em;
+    margin: 2em 0;
+    
+}
+
+.showcase > div {
+    border: 1px solid black;
+    width: 250px;
+    border-radius: 4px;
+    background-color: #D9E9B6;
+}
+
+
+.showcase div > div {
+    width: 100%;
+}
+
+.showcase img {
+    width: 100%;
+    height: 150px;
+}
+
+.showcase p {
+    margin: 0;
+    padding: 20px;
+}
+
+
+@media screen and (max-width: 800px) {
+    #two {
+        padding: 2em .5em;
+    }
+    .showcase {
+        display: grid;
+        justify-content: center;
+        gap: 1em;
+    }
+    .feature {
+        margin: 1em 0;
+    }
+    .feature h1 {
+        text-align: center;
+        font-size: 1.6em;
+        margin-bottom: 1em;
+    }
+    .feature p {
+        line-height: 1.5em;
+        margin: 0 1em;
+    }
+}
+
+
+
+/* contact */
+
+
+.contact {
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.con {
+    width: 60%;
+}
+
+.con h1 {
+    font-size: 2.3em;
+    margin-bottom: 1em;
+}
+
+.con p {
+    text-align: justify;
+}
+
+.con > div {
+    margin: 3em;
+}
+
+.illus2 {
+    margin: auto;
+    width: 280px;
+}
+
+
+@media screen and (max-width: 700px) {
+    .con {
+        width: 100%;
+    }
+    .contact {
+        display: grid;
+        justify-content: center;
+    }
+}
+

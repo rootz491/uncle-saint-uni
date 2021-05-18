@@ -1,0 +1,95 @@
+section {
+    padding: 2em;
+}
+
+#studInfo {
+    margin: 3em 6em;
+}
+
+#studInfo h1 {
+    margin: 1em 0;
+}
+
+#studInfo p {
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+
+/* list */
+.studentList {
+    margin: 4em 0;
+}
+
+span {
+    padding: 2px 4px;
+    background: lightgrey;
+    color: #1E56AC;
+    border-radius: 5px;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin: auto;
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: thin;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+
+
+
+@media screen and (max-width: 750px) {
+    section {
+        padding: 2em 5px;
+    }
+    #studInfo {
+        margin: 3em 1em;
+    }
+    .styled-table {
+        font-size: 12px;
+        min-width: 300px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .styled-table {
+        font-size: 10px;
+        min-width: 300px;
+    }
+
+    .styled-table th,
+    .styled-table td {
+        padding: 8px 6px;
+    }
+
+    .age {
+        display: none;
+    }
+
+}

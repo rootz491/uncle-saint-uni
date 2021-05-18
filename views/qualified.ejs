@@ -1,0 +1,54 @@
+<%- include('header'); -%>
+
+<link rel="stylesheet" href="static/css/qualified.css">
+
+<section>
+    
+    <div id="studInfo">
+        <h1>Enrolled Students</h1>
+        <p>
+            Students who've filled the form and met the criteria will be listed in this page.
+            <br><br>
+            Student cannot change their information once form's been submitted.
+            <br>
+            This list is synchronous with our database. Hense once you've enrolled you can see your name listed here if you got it!
+            <br><br>
+            For any further assistance or queries please visit <span>Contact</span> page and do come in touch with us.
+            <br>
+            <br>
+            Thankyou for your patience.
+        </p>
+    </div>
+
+    <div class="studentList">
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th id="name">Student Name</th>
+                    <th id="address">Address</th>
+                    <th id="phoneNumber">Phone Number</th>
+                    <th id="age" class="age">Age</th>
+                    <th id="marks">Marks</th>
+                    <th id="course">Course</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% studentList.forEach(student => { %>
+                <tr>
+                    <td><%= student.name %></td>
+                    <td><%= student.address %></td>
+                    <td><%= student.phoneNumber %></td>
+                    <td class="age"><%= student.age %></td>
+                    <td><%= student.marks %></td>
+                    <td><%= student.course %></td>
+                </tr>
+                <% }) %>
+            </tbody>
+        </table>
+
+    </div>
+
+</section>
+
+
+<%- include('footer'); -%>

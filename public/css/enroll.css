@@ -1,0 +1,81 @@
+section {
+    padding: 2em;
+}
+
+#studInfo {
+    margin: 3em 6em;
+}
+
+#studInfo h1 {
+    margin: 1em 0;
+}
+
+#studInfo p {
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+span {
+    padding: 2px 4px;
+    background: lightgrey;
+    color: #1E56AC;
+    border-radius: 5px;
+}
+form {
+    width: 40%;
+    margin: auto;
+    display: grid;
+    gap: .4em;
+    padding: 2em;
+    background: #D9E9B6;
+    border-radius: 5px;
+}
+
+
+input {
+    border: 1px solid #1E56AC;
+    padding: 4px 8px;
+}
+
+form > div {
+    display: flex;
+}
+form > h1 {
+    margin-bottom: .5em;
+    color: #1E56AC;
+}
+
+button {
+    background: none;
+    border: 2px solid #1E56AC ;
+    border-radius: 2px;
+    padding: 4px 10px;
+    margin: auto;
+    cursor: pointer;
+    color: #1E56AC;
+}
+
+
+button:hover {
+    background: blue;
+    color: white;
+}
+
+@media screen and (max-width: 750px) {
+    section {
+        padding: 2em .5em;
+    }
+    #studInfo {
+        margin: 3em 0;
+    }
+    form {
+        width: 100%;
+    }
+}
+
+.thankyou {
+    background: lightgreen;
+    padding: 1.5em 1em;
+    margin: 1em 0;
+    border-radius: 6px;
+}

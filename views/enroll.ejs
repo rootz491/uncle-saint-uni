@@ -1,0 +1,62 @@
+<%- include('header'); -%>
+
+<link rel="stylesheet" href="static/css/enroll.css">
+
+<section>
+
+    <div class="thankyou" <% if (thankyou == true) { %>hidden <% } %> >
+        <h1>Thankyou for your submission,</h1>
+        <p>Please check <span><a href="/qualified">qualified student page</a></span> and see if your name is there or not.</p>
+        <p>If you'll able to find your name there, Means you've been <strong>selected</strong> as seat candidate.</p>
+        <br><br>
+        <p>Again Thank you,</p><br>
+        <p>Kind regards, </p>
+        <p><strong>Asem</strong>, Admin, Uncle Saint University</p>
+    </div>
+
+    <div id="studInfo">
+        <h1>Student Enrollment Request Form</h1>
+        <p>
+            Interested students can make apply for seat by filling this form correctly.
+            <br>
+            Student with wrong entry (i.e. marks) will get dismissed immidiately.
+            <br>
+            Please only fill the form once per student, sending multiple forms will result in rejection of student application!
+            <br><br>
+            We will be choosing student on basis of Marks, 
+            <br>
+            Students with marks greater than or equals to <strong>65</strong> will get approved, and will reserve seat.
+            <br>
+            <br>
+            Further instructions are present on <span>Enrolled Students</span> page.
+        </p>
+    </div>
+    <form action="/enroll" method="POST">
+        <h1>Student Data</h1>
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="e.g. Eyan" required>
+        <label for="address">Address</label>
+        <input type="text" name="address" placeholder="Mumbai, India" required>
+        <label for="phoneNumber">Phone Number</label>
+        <input type="number" name="phoneNumber" placeholder="975 243 7122" required>
+        <label for="age">Age</label>
+        <input type="number" name="age" placeholder="21" required>
+        <label for="marks">Marks</label>
+        <input type="text" name="marks" placeholder="87" required>
+        <label for="course">Applied course</label>
+        <select name="course" default="BSC. IT">
+            <option value="BCA">BCA</option>
+            <option value="MCA">MCA</option>
+            <option value="BSC. IT">Bsc. IT</option>
+            <option value="M. TECH">M. Tech</option>
+            <option value="B. TECH">B. Tech</option>
+        </select>
+
+        <div>
+            <button type="submit">enroll</button>
+        </div>
+    </form>
+</section>
+
+
+<%- include('footer'); -%>
