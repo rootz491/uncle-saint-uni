@@ -4,7 +4,6 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
   "keywords": [],
@@ -16,10 +15,8 @@
     "ejs": "^3.1.6",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
-    "marked": "^2.0.3",
     "mongoose": "^5.12.9",
-    "morgan": "~1.9.1",
-    "pug": "^3.0.2"
+    "morgan": "~1.9.1"
   },
   "engines": {
     "node": "15.12.0"
