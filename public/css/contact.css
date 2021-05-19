@@ -275,3 +275,127 @@ section {
     margin: 1em 0;
     border-radius: 6px;
 }
+
+.executive {
+  display: flex;
+  padding: 2em;
+}
+
+.asemImg {
+  align-self: center;
+  max-width:300px;
+}
+
+.asemImg > img {
+  border-radius: 1em;
+
+}
+
+.asemDesc {
+  padding: 0 2em;
+}
+
+.asemDesc > h1 {
+  font-size: 2.5em;
+  color: #1E56AC;
+}
+
+.asemDesc div > p {
+  line-height: 2em;
+}
+
+
+#no {
+  margin: 2em 0;
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+  border-radius: 20px;
+}
+
+#no p {
+  width: 50%;
+  height: 100%;
+  padding: .5em 2em;
+}
+
+#no p:first-child {
+  background: black;
+  color: white;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#no p:last-child {
+  background: white;
+  color: black;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#or {
+  text-align: center;
+  margin: 2em 0;
+}
+
+#blockCover {
+  margin: 1em 0;
+  position: relative;
+}
+
+blockquote:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  padding: 2px;
+  height: 100%;
+  background: #000;
+}
+
+blockquote {
+  padding: 0 2em;
+}
+
+
+
+@media screen and (max-width: 650px) {
+  .executive {
+    display: block;
+    padding: 0;
+  }
+  .asemDesc > h1 {
+    text-align: center;
+  }
+  .asemDesc {
+    padding: 2em 0;
+    padding-bottom: 0;
+  }
+  .asemImg {
+    margin: auto;
+  }
+  #no {
+    margin: 2em auto;
+  }
+  #no p {
+    padding: .2em 1.2em;
+  }
+  #media {
+    margin: auto;
+  }
+}
+
+#media {
+  width: 280px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#media div {
+  width: 50px;
+}
+
+#media a > img {
+  width: 100%;
+}
