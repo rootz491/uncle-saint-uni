@@ -1,0 +1,98 @@
+section {
+    padding: 2em;
+}
+section > h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #1E56AC;
+}
+
+hr {
+    margin: 2em 0;
+}
+
+.courses {
+    margin: 0 10em;
+}
+
+.courses > div h1 {
+    font-size: 2em;
+    color: #D9E9B6;
+}
+
+.courses > div > p {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 1.4em;
+    letter-spacing: 1.2px;
+    padding-left: 1em;
+    border-left: 3px solid #1E56AC;
+    text-align: justify;
+} 
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.courses ul, .courses > div > p {
+    margin: 1em 0;
+}
+
+.courses > div tr {
+    width: 500px;
+
+}
+
+th, td {
+    text-align: start;
+    width: 50%;
+    padding: 5px .5em;
+}
+
+
+@media screen and (max-width: 1000px) {
+    table {
+        margin: auto;
+    }
+    section > h1 {
+        font-size: 2em;
+    }
+    .courses {
+        margin: 0 1em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+    section {
+        padding: 2em 1em;
+    }
+    section > h1 {
+        font-size: 1.7em;
+    }
+    .courses {
+        margin: 0;
+    }
+    th, td {
+        font-size: 14px;
+    }
+}
+
+.enroll > h1 {
+    text-align: center;
+    color: #D9E9B6;
+}
+
+.enroll div > a {
+    padding: 8px 14px;
+    border-radius: 3px;
+    background: rgb(255, 124, 124);
+    color: white;
+    margin: auto;
+}
+
+.enroll > div {
+    padding: 2em 0;
+    display: flex;
+}

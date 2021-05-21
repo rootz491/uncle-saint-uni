@@ -7,6 +7,10 @@ router.get('/', (req, res) => {
     res.render('homepage', { title: 'Homepage' });
 });
 
+//  courses
+router.get('/courses', (req, res) => {
+    res.render('courses', { title: 'Courses' });
+});
 
 //  enroll 
 router.get('/enroll', (req, res) => {
@@ -32,8 +36,6 @@ router.get('/qualified', (req, res) => {
     });
     
 });
-
-
 
 
 //  contact page
